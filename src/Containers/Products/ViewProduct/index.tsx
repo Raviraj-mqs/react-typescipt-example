@@ -49,7 +49,6 @@ const ViewProduct = ({ match }:IViewProductProps) => {
                 console.log("Error in fetching a product's details", error)
             )
 
-        // setProduct(data)
     }
 
     useEffect(() => {
@@ -79,10 +78,6 @@ const ViewProduct = ({ match }:IViewProductProps) => {
                                             {product.description}
                                         </Typography>
                                     </CardContent>
-                                    {/* <CardActions>
-                    <Button>+</Button>
-                    <Button>-</Button>
-                  </CardActions> */}
                                 </CardActionArea>
                             </Card>
                         </Grid>
