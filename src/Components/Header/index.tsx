@@ -19,10 +19,8 @@ const Header = () => {
         <>
             <AppBar position="static">
                 <Toolbar>
-                    
                     <Box display="flex" flexGrow={1}>
-                        <Typography variant="h6">ReactApp</Typography>
-                        
+                        <Typography variant="h6">Cart App</Typography>
                         <Button
                             className={classes.button}
                             color="inherit"
@@ -31,7 +29,7 @@ const Header = () => {
                         >
                             Home
                         </Button>
-                        <Button
+                        {/* <Button
                             className={classes.button}
                             color="inherit"
                             component={Link}
@@ -54,20 +52,18 @@ const Header = () => {
                             to="/products"
                         >
                             Products
-                        </Button>
+                        </Button> */}
                    
+                        <Button
+                            className={classes.button}
+                            color="inherit"
+                            component={Link}
+                            to="/cart"
+                        >
+                            Cart {totalItems}
+                        </Button>
                     </Box>
-                    <Button
-                        className={classes.button}
-                        color="inherit"
-                        component={Link}
-                        to="/cart"
-                    >
-                        Cart {totalItems}
-                    </Button>
-                     
-
-                </Toolbar>
+            </Toolbar>
             </AppBar>
         </>
     )
